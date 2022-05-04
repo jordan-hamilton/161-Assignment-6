@@ -1,6 +1,15 @@
+/*********************************************************************
+ ** Author: Jordan Hamilton
+ ** Date: 02/14/2018
+ ** Description: Specification file for the Player class.
+ *********************************************************************/
+
 #ifndef PLAYER_HPP
 #define PLAYER_HPP
+
 #include <string>
+
+
 class Player {
 
   private:
@@ -8,6 +17,7 @@ class Player {
     int playerPoints;
     int playerRebounds;
     int playerAssists;
+
   public:
     Player();
     Player(std::string nameIn, int pointsIn, int reboundsIn, int assistsIn);
@@ -19,6 +29,7 @@ class Player {
     void setAssists(int assistsIn);
     int getAssists();
     bool hasMorePointsThan(Player otherGuy);
+
 };
 
 #endif
